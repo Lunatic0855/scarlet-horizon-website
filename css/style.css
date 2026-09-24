@@ -71,6 +71,12 @@ a:hover { color: var(--accent-dark); }
   letter-spacing: 0.2px;
 }
 
+.brand-logo-img {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -597,6 +603,21 @@ a:hover { color: var(--accent-dark); }
   color: var(--text);
 }
 
+.footer-brand-logo-img {
+  height: 34px;
+  width: auto;
+  display: block;
+}
+
+.listing-logo-badge {
+  height: 84px;
+  width: auto;
+  display: block;
+  align-self: flex-start;
+  flex-shrink: 0;
+  margin-bottom: 14px;
+}
+
 .footer-nav {
   display: flex;
   gap: 24px;
@@ -1115,4 +1136,216 @@ a:hover { color: var(--accent-dark); }
 
   .hero h1 { font-size: 48px; }
   .title-section h1 { font-size: 40px; }
+}
+
+/* ---------- VIEW ALL PHOTOS LINK (detail pages) ---------- */
+.view-all-photos {
+  box-sizing: border-box;
+  margin: 18px 80px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.view-all-photos a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: var(--text);
+  color: var(--bg);
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.view-all-photos a:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .view-all-photos {
+    margin: 14px 20px 0;
+    justify-content: center;
+  }
+}
+
+/* ---------- GALLERY PAGE ---------- */
+.gallery-page-header {
+  box-sizing: border-box;
+  padding: 48px 80px 24px;
+}
+
+.gallery-page-header .back-link {
+  margin-bottom: 18px;
+}
+
+.gallery-page-header h1 {
+  margin: 0 0 6px;
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-weight: 400;
+  font-size: 44px;
+}
+
+.gallery-page-header .gallery-subtitle {
+  color: var(--text-muted);
+  font-size: 17px;
+  margin: 0 0 24px;
+}
+
+.gallery-filters {
+  box-sizing: border-box;
+  padding: 0 80px 24px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo-grid {
+  box-sizing: border-box;
+  padding: 0 80px 80px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.photo-tile {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #E9DFD1;
+  aspect-ratio: 4 / 3;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  display: block;
+}
+
+.photo-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.25s ease;
+}
+
+.photo-tile:hover img {
+  transform: scale(1.05);
+}
+
+.photo-tile .photo-tile-cat {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: rgba(31, 24, 19, 0.72);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.photo-grid.is-empty::after {
+  content: "No photos in this category yet.";
+  grid-column: 1 / -1;
+  color: var(--text-muted);
+  padding: 40px 0;
+  text-align: center;
+}
+
+/* ---------- LIGHTBOX ---------- */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 11, 8, 0.92);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 24px;
+}
+
+.lightbox.is-open {
+  display: flex;
+}
+
+.lightbox-figure {
+  max-width: min(1100px, 92vw);
+  max-height: 86vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.lightbox-figure img {
+  max-width: 100%;
+  max-height: 76vh;
+  border-radius: 12px;
+  display: block;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+.lightbox-caption {
+  color: #F5EFE6;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  border: 0;
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-close {
+  top: 20px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  font-size: 20px;
+}
+
+.lightbox-prev,
+.lightbox-next {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 52px;
+  height: 52px;
+  font-size: 22px;
+}
+
+.lightbox-prev { left: 20px; }
+.lightbox-next { right: 20px; }
+
+.lightbox-close:hover,
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  background: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .gallery-page-header,
+  .gallery-filters,
+  .photo-grid {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .photo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lightbox-prev { left: 8px; }
+  .lightbox-next { right: 8px; }
+  .lightbox-close { top: 10px; right: 10px; }
 }
