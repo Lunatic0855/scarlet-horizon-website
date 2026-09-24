@@ -1,7 +1,7 @@
 // Scarlet Horizon — home page listing filter (All stays / Tiny homes / Campers)
 (function () {
   var filterButtons = document.querySelectorAll('#filter-group .filter-btn');
-  var cards = document.querySelectorAll('#listings-grid .listing-card');
+  var cards = document.querySelectorAll('#listings-grid .listing-tile');
 
   if (!filterButtons.length || !cards.length) return;
 
