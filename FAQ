@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAQ — Scarlet Horizon</title>
+<meta name="description" content="Frequently asked questions about booking a Scarlet Horizon tiny home or camper stay in Utah.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&amp;family=Instrument+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="shortcut icon" href="favicon.ico">
+<style>
+.faq-body {
+  box-sizing: border-box;
+  padding: 24px 80px 96px;
+  display: flex;
+  justify-content: center;
+}
+.faq-list {
+  width: 100%;
+  max-width: 760px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.faq-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--border-soft);
+}
+.faq-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.faq-item h2 {
+  margin: 0;
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+.faq-item p {
+  margin: 0;
+  font-size: 16.5px;
+  line-height: 1.7;
+  color: var(--text-body);
+}
+.faq-item p + p {
+  margin-top: 4px;
+}
+.faq-note {
+  max-width: 760px;
+  margin: 0 auto 8px;
+  font-size: 14px;
+  color: var(--text-muted);
+  font-style: italic;
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- NAV -->
+<header class="site-header">
+<a href="index.html" class="brand">
+<img src="images/logo-scarlet-horizon.png" alt="Scarlet Horizon" class="brand-logo-img">
+</a>
+<nav aria-label="Main" class="main-nav">
+<a href="index.html">Tiny Homes</a>
+<a href="index.html">Campers</a>
+<a href="index.html#how">How it works</a>
+<a href="index.html#contact">Contact</a>
+<a href="index.html#rentals" class="btn btn-accent nav-cta">Book a stay</a>
+</nav>
+</header>
+
+<!-- TITLE -->
+<section class="title-section">
+<a href="index.html" class="back-link">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"></path></svg>
+Back home</a>
+<div class="title-meta">
+<h1>Frequently asked questions</h1>
+<div class="title-tag">Everything you need to know before you book a Scarlet Horizon stay.</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-body">
+<div class="faq-list">
+
+<div class="faq-item">
+<h2>How do I book a stay?</h2>
+<p>Every listing can be booked directly on Airbnb — just open the listing page and click "Check dates &amp; book on Airbnb." You can also send us a direct booking request from the listing page, and we'll follow up to confirm availability and your total before anything is charged.</p>
+</div>
+
+<div class="faq-item">
+<h2>What are the check-in and check-out times?</h2>
+<p>Check-in and check-out times are emailed to you automatically once your booking is confirmed, so you'll always have the exact details for your specific stay ahead of arrival.</p>
+</div>
+
+<div class="faq-item">
+<h2>Are pets allowed?</h2>
+<p>No, pets are not allowed at any of our properties.</p>
+</div>
+
+<div class="faq-item">
+<h2>Is there a security deposit or service fee?</h2>
+<p>Some listings include a refundable security deposit and/or a service fee, shown on the listing's pricing breakdown. If a listing doesn't have an amount listed yet, check with us directly and we'll confirm it before you book.</p>
+</div>
+
+<div class="faq-item">
+<h2>What's the cancellation policy?</h2>
+<p>Cancellation terms are set per listing and shown on the Airbnb booking page for that stay. If you booked direct with us, just reach out and we'll work with you on the details.</p>
+</div>
+
+<div class="faq-item">
+<h2>Is there a minimum number of nights?</h2>
+<p>Minimum stay requirements can vary by listing and season. You'll see the exact minimum when you select your dates on the listing's Airbnb page.</p>
+</div>
+
+<div class="faq-item">
+<h2>Where are the properties located?</h2>
+<p>Our tiny homes are in Apple Valley, Utah, just minutes from Zion National Park. Our campers are in Farmington, Utah, about 20 minutes from Salt Lake City.</p>
+</div>
+
+<div class="faq-item">
+<h2>How many guests can each stay accommodate?</h2>
+<p>It depends on the listing — anywhere from 2 to 4 guests. Full sleeping arrangements and guest limits are listed on each stay's details page.</p>
+</div>
+
+<div class="faq-item">
+<h2>Do the stays have Wi-Fi and parking?</h2>
+<p>Yes — every stay includes Wi-Fi and free parking. Specific amenities vary by listing, so check the "What's included" section on each stay's page for the full list.</p>
+</div>
+
+<div class="faq-item">
+<h2>Still have a question?</h2>
+<p>Call us at <a href="tel:+18019712226">801-971-2226</a> or email <a href="mailto:carmen@scarlethorizon.app">carmen@scarlethorizon.app</a> — we typically respond within an hour.</p>
+</div>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+<div class="footer-brand">
+<img src="images/logo-scarlet-horizon.png" alt="Scarlet Horizon" class="footer-brand-logo-img">
+</div>
+<div>© 2026 Scarlet Horizon</div>
+<nav aria-label="Footer" class="footer-nav">
+<a href="index.html#rentals">Stays</a>
+<a href="faq.html">House rules</a>
+<a href="index.html#contact">Contact</a>
+</nav>
+</footer>
+</div>
+</body>
+</html>
